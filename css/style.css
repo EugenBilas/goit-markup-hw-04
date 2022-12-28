@@ -302,6 +302,23 @@ img {
     text-align: center;
 }
 
+.team-soc-list{
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.team-soc-item{
+    list-style: none;
+}
+
+.team-soc-link{
+    display: block;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+}
+
+
 .footer {
     background: #2E2F42;
     margin-top: 0;
