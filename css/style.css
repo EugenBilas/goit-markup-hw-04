@@ -4,11 +4,15 @@ body {
     margin: 0;
 }
 
+img {
+    display: block;
+}
+
 .container {
-    max-width: 1158px;
+    max-width: 1128px;
     margin: 0 auto;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .color-web {
@@ -22,7 +26,12 @@ body {
 }
 
 .header {
-    border: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.link {
+    display: flex;
+    align-items: center;
 }
 
 .navigation {
@@ -31,6 +40,7 @@ body {
 }
 
 .header-logo {
+    font-family: 'Raleway';
     font-weight: 700;
     font-size: 18px;
     line-height: 1.33;
@@ -77,6 +87,11 @@ body {
     padding-bottom: 24px;
 }
 
+.header-link:hover,
+.header-link:focus {
+    color: #434455;
+}
+
 .header-link:active {
     color: #4D5AE5;
 }
@@ -91,6 +106,7 @@ body {
     padding: 0;
 }
 
+
 .header-contacts li {
     margin-right: 40px;
 }
@@ -99,36 +115,30 @@ body {
     margin-right: 0;
 }
 
-.header-mail a {
-    font-size: 16px;
+.contacts {
+    color: #434455;
+    font-size: 16;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
     text-decoration: none;
-    list-style: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-.header-phone a {
-    text-decoration: none;
-    color: #434455;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    list-style: none;
+.contacts:focus,
+.contacts:hover {
+    color: #404BBF;
 }
 
 .body {
-    background-color: #2E2F42;
     text-align: center;
-    padding-top: 192px;
-    padding-bottom: 291px;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 
 .body-title {
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -136,9 +146,18 @@ body {
     color: #FFFFFF;
     margin-top: 0;
     margin-bottom: 48px;
+    width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.body-title-btn:hover {
+    background: #404BBF;
 }
 
 .body-title-btn {
+    font-family: 'Roboto';
+    font-weight: 500;
     display: flex;
     align-items: flex-start;
     padding: 16px 32px;
@@ -151,16 +170,34 @@ body {
     border: 0;
 }
 
+.background-body {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("/img/body-fon.jpg");
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section-slogan {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 .section-slogan-col {
     display: flex;
     gap: 24px;
     list-style: none;
-    margin-top: 120px;
-    margin-bottom: 120px;
+    padding-left: 0;
+    margin: 0;
 }
 
 .slogan {
+    font-family: 'Roboto';
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -168,7 +205,8 @@ body {
     color: #2E2F42;
     width: 264px;
     height: 24px;
-    margin-top: 0;
+    margin: 0;
+
 }
 
 .text {
@@ -178,10 +216,16 @@ body {
     color: #434455;
     width: 264px;
     height: 72px;
+    margin-top: 8px;
     margin-bottom: 0;
 }
 
+.section {
+    padding-bottom: 120px;
+}
+
 .heading {
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -193,16 +237,13 @@ body {
     margin-bottom: 72px;
 }
 
-.section-image {
+.image {
     display: flex;
     gap: 24px;
-}
-
-.image {
     list-style: none;
     margin-top: 0;
-    margin-bottom: 120px;
-    padding: 0;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 .section-team {
@@ -214,6 +255,8 @@ body {
 .container-team {
     display: flex;
     gap: 24px;
+    margin: 0;
+    padding-left: 0;
 }
 
 .section-team-item {
@@ -233,13 +276,30 @@ body {
     border: 0.5px solid #2E2F4214;
 }
 
-.section-team-item h3  {
-    margin-top: 32px;
+.employee-desc {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.employee  {
+    margin-top: 0;
+    color: #2E2F42;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    font-family: 'Roboto';
+    font-weight: 700;
+    text-align: center;
     margin-bottom: 8px;
 }
 
-.section-team-item p {
-    margin-bottom: 32px;
+.desc {
+    margin: 0;
+    color: #2E2F42;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
 }
 
 .footer {
@@ -251,6 +311,7 @@ body {
 }
 
 .logo-footer {
+    font-family: 'Raleway';
     font-weight: 700;
     font-size: 18px;
     line-height: 1.33;
@@ -282,10 +343,40 @@ body {
     color: #FFFFFF;
 }
 
+.container-portfolio {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.body-btn {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
 .container-body {
-    margin-top: 97px;
+    margin-top: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
     margin-bottom: 72px;
-    text-align: center;
+    list-style: none;
+}
+
+.container-body li {
+    margin-right: 24px;
+
+}
+
+.container-body li:last-child {
+    margin-right: 0;
 }
 
 .body-btn-all {
@@ -295,12 +386,12 @@ body {
     border: 1px solid #E7E9FC;
     border-radius: 4px;
     color: #4D5AE5;
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
-    margin-right: 24px;
 }
 
 .body-btn-web {
@@ -310,12 +401,12 @@ body {
     border: 1px solid #E7E9FC;
     border-radius: 4px;
     color: #4D5AE5;
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
-    margin-right: 24px;
 }
 
 .body-btn-app {
@@ -325,12 +416,12 @@ body {
     width: 78px;
     height: 48px;
     color: #4D5AE5;
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
-    margin-right: 24px;
 }
 
 .body-btn-design {
@@ -340,12 +431,12 @@ body {
     width: 101px;
     height: 48px;
     color: #4D5AE5;
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
-    margin-right: 24px;
 }
 
 .body-btn-marketing {
@@ -355,6 +446,7 @@ body {
     width: 126px;
     height: 48px;
     color: #4D5AE5;
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.5;
@@ -364,40 +456,52 @@ body {
 
 .body-btn-items {
     box-sizing: border-box;
-    width: 361px;
+    width: 360px;
     height: 420px;
     padding-left: 0;
+    margin: 0;
+}
+
+.container-body-dtn {
     border: 0.5px solid #2E2F4214;
+    border-top: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
 }
 
 .container-items {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
-    padding-bottom: 120px;
+    padding-left: 0;
+    margin: 0;
+    row-gap: 48px;
+    column-gap: 24px;
 }
 
-.body-btn-items li {
+.body-btn-items {
     list-style: none;
 }
 
 .body-btn-items h3 {
+    font-family: 'Roboto';
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    margin: 32px auto 8px 16px;
+    margin-bottom: 8px;
+    margin-top: 0;
+    margin-left: 0;
 }
 
 .body-btn-items p {
+    font-family: 'Roboto';
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    margin-left: 16px;
-    margin-bottom: 32px;
-    margin-top: 0;
+    margin: 0;
 }
 

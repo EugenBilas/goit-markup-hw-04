@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>goit-markup-hw-04/portfolio</title>
+    <title>goit-markup-hw-03/portfolio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,26 +17,26 @@
 
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container link">
             <nav class="navigation">
-                <a href="/" class="header-logo"><span class="color-web">Web</span>Studio</a>
+                <a href="index.html" class="header-logo"><span class="color-web">Web</span>Studio</a>
 
                 <ul class="header-list">
-                    <li><a href="/" class="header-link">Studio</a></li>
+                    <li><a href="./index.html" class="header-link">Studio</a></li>
                     <li><a href="./portfolio.html" class="header-link">Portfolio</a></li>
-                    <li><a href="/" class="header-link">Contacts</a></li>
-                </ul>
-            
-
-                <ul class="header-contacts">
-                    <li class="header-mail">
-                        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    </li>
-                    <li class="header-phone">
-                        <a href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
-                    </li>
+                    <li><a href="#" class="header-link">Contacts</a></li>
                 </ul>
             </nav>
+
+            <ul class="header-contacts">
+                <li class="header-mail">
+                    <a class="contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="header-phone">
+                    <a class="contacts" href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
+                </li>
+            </ul>
+            
         </div>
     </header>
 
@@ -45,99 +45,110 @@
         <section class="body-btn">
 
             <div class="container">
+
+                <h1 class="container-portfolio">Portfolio</h1>
             
-                <div class="container-body">
+                <ul class="container-body">
 
-                    <!--<h1>Button</h1>-->
+                    <li>
+                        <button class="body-btn-all" type="button">All</button>
+                    </li>
 
-                    <button class="body-btn-all" type="button">All</button>
+                    <li>
+                        <button class="body-btn-web" type="button">Web Site</button>
+                    </li>
 
-                    <button class="body-btn-web" type="button">Web Site</button>
+                    <li>
+                        <button class="body-btn-app" type="button">App</button>
+                    </li>
 
-                    <button class="body-btn-app" type="button">App</button>
+                    <li>
+                        <button class="body-btn-design" type="button">Design</button>
+                    </li>
 
-                    <button class="body-btn-design" type="button">Design</button>
+                    <li>
+                        <button class="body-btn-marketing" type="button">Marketing</button>
+                    </li>
+                </ul>
 
-                    <button class="body-btn-marketing" type="button">Marketing</button>
-                </div>
-
-                <div class="container-items">
+                <ul class="container-items">
 
                     <!--<h2>Items</h2>-->
 
-                    <ul class="body-btn-items">
-                        <li>
-                            <img width="360" height="300" src="./img/portfolio-1.jpg" alt="App in phone">
+                    <li class="body-btn-items">
+                        <img width="360" height="300" src="./img/portfolio-1.jpg" alt="App in phone">
+                        <div class="container-body-dtn">
                             <h3>Banking App Interface Concept</h3>
                             <p>App</p>
-                        </li>
-                    </ul>
+                        </div>
+                    </li>
 
-                    <ul class="body-btn-items">
-                        <li>
-                            <img width="360" height="300" src="./img/portfolio-2.jpg" alt="Cashless payment">
+                    <li class="body-btn-items">
+                        <img width="360" height="300" src="./img/portfolio-2.jpg" alt="Cashless payment">
+                        <div class="container-body-dtn">
                             <h3>Cashless Payment</h3>
                             <p>Marketing</p>
-                        </li>
-                    </ul>
+                        </div>
+                    </li>
 
-                    <ul class="body-btn-items">
-                        <li>
-                            <img width="360" height="300" src="./img/portfolio-3.jpg" alt="Meditaion app">
+                    <li class="body-btn-items">
+                        <img width="360" height="300" src="./img/portfolio-3.jpg" alt="Meditaion app">
+                        <div class="container-body-dtn">
                             <h3>Meditaion App</h3>
                             <p>App</p>
-                        </li>
-                    </ul>
+                        </div>
+                    </li>
 
-                    <ul class="body-btn-items">
-                        <li>
-                            <img width="360" height="300" src="./img/portfolio-4.jpg" alt="Taxi service">
+                    <li class="body-btn-items">
+                        <img width="360" height="300" src="./img/portfolio-4.jpg" alt="Taxi service">
+                        <div class="container-body-dtn">
                             <h3>Taxi Service</h3>
                             <p>Marketing</p>
-                        </li>
-                    </ul>
+                        </div>
+                    </li>
 
-                    <ul class="body-btn-items">
-                        <li>
-                            <img width="360" height="300" src="./img/portfolio-5.jpg" alt="Screen illustrations">
+                    <li class="body-btn-items">
+                        <img width="360" height="300" src="./img/portfolio-5.jpg" alt="Screen illustrations">
+                        <div class="container-body-dtn">
                             <h3>Screen Illustrations</h3>
                             <p>Design</p>
-                        </li>
-                    </ul>
+                        </div>
+                    </li>
 
-                    <ul class="body-btn-items">
-                        <li>
-                            <img width="360" height="300" src="./img/portfolio-6.jpg" alt="Online courses">
+                    <li class="body-btn-items">
+                        <img width="360" height="300" src="./img/portfolio-6.jpg" alt="Online courses">
+                        <div class="container-body-dtn">
                             <h3>Online Courses</h3>
                             <p>Marketing</p>
-                        </li>
-                    </ul>
+                        </div>
+                    </li>
 
-                    <ul class="body-btn-items">
-                        <li>
-                            <img width="360" height="300" src="./img/portfolio-7.jpg" alt="Instagram stories concept">
+                    <li class="body-btn-items">
+                        <img width="360" height="300" src="./img/portfolio-7.jpg" alt="Instagram stories concept">
+                        <div class="container-body-dtn">
                             <h3>Instagram Stories Concept</h3>
                             <p>Design</p>
-                        </li>
-                    </ul>
+                        </div>
+                    </li>
 
-                    <ul class="body-btn-items">
-                        <li>
-                            <img width="360" height="300" src="./img/portfolio-8.jpg" alt="Organic food">
+                    <li class="body-btn-items">
+                        <img width="360" height="300" src="./img/portfolio-8.jpg" alt="Organic food">
+                        <div class="container-body-dtn">
                             <h3>Organic Food</h3>
                             <p>Web Site</p>
-                        </li>
-                    </ul>
+                        </div>
+                    </li>
 
-                    <ul class="body-btn-items">
-                        <li>
-                            <img width="360" height="300" src="./img/portfolio-9.jpg" alt="Fresh coffee">
+                    <li class="body-btn-items">
+                        <img width="360" height="300" src="./img/portfolio-9.jpg" alt="Fresh coffee">
+                        <div class="container-body-dtn">
                             <h3>Fresh Coffee</h3>
                             <p>Web Site</p>
-                        </li>
-                    </ul>
+                        </div>
+                    </li>
+                    
 
-                </div>
+                </ul>
 
             </div>
 
