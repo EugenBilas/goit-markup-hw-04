@@ -329,11 +329,26 @@ img {
     
 }
 
-
 .team-soc-icon{
     width: 16px;
     height: 16px;
     margin: 12px;
+}
+
+.footer-container{
+    display: flex;
+}
+
+.footer-header{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+    margin-top: 0;
 }
 
 .footer {
