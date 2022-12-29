@@ -269,8 +269,8 @@ img {
     padding-left: 0;
     background: #FFFFFF;
     box-sizing: border-box;
-    width: 264px;
-    height: 380px; 
+    /*width: 264px;
+    height: 436px;*/
     text-align: center;
     border-radius: 0px 0px 4px 4px;
     border: 0.5px solid #2E2F4214;
@@ -278,7 +278,7 @@ img {
 
 .employee-desc {
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 36px;
 }
 
 .employee  {
@@ -305,19 +305,36 @@ img {
 .team-soc-list{
     display: flex;
     align-items: center;
-    padding: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
 }
 
 .team-soc-item{
     list-style: none;
+    gap: 24px;
+    padding-right: 24px;
+}
+
+.team-soc-item:last-child {
+    padding-right: 0;
 }
 
 .team-soc-link{
+    width: 40px;
+    height: 40px;
     display: block;
     border-radius: 50%;
     background-color: #4D5AE5;
+    
 }
 
+
+.team-soc-icon{
+    width: 16px;
+    height: 16px;
+    margin: 12px;
+}
 
 .footer {
     background: #2E2F42;
