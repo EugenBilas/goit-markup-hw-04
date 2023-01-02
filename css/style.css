@@ -196,6 +196,23 @@ img {
     margin: 0;
 }
 
+
+.slogan-icon {
+    margin-bottom: 8px;
+    width: 264px;
+    height: 112px;
+    justify-content: center;
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+    background: #F4F4FD;
+}
+
+.section-slogan-icon {
+    width: 64px;
+    height: 64px;
+}
+
 .slogan {
     font-family: 'Roboto';
     font-weight: 500;
@@ -329,6 +346,10 @@ img {
     
 }
 
+.team-soc-link:hover {
+    background: #404BBF;
+}
+
 .team-soc-icon{
     width: 16px;
     height: 16px;
@@ -339,9 +360,48 @@ img {
     display: flex;
 }
 
+.container-soc {
+    padding-left: 120px;
+}
+
+.footer-container-soc {
+    list-style: none;
+}
+
+.container-soc-item{
+    padding-right: 16px;
+}
+
+.container-soc-item:last-child {
+    padding-right: 0;
+}
+
+.container-soc-link{
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.container-soc-link:hover {
+    background: #31D0AA;
+}
+
+.container-soc-list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.container-soc-icon {
+    margin: 8px;
+    width: 24px;
+    height: 24px;
+}
+
 .footer-header{
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.5;
@@ -370,7 +430,7 @@ img {
     text-decoration: none;
 }
 
-.footer p {
+.container-logo p {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
