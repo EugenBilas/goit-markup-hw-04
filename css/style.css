@@ -320,11 +320,17 @@ img {
 }
 
 .team-soc-list{
+
+
     display: flex;
+    justify-content: space-between;
+    padding: 12px 16px 36px 16px; 
+
+    /*display: flex;*/
     align-items: center;
-    padding-left: 16px;
+    /*padding-left: 16px;
     padding-right: 16px;
-    padding-top: 12px;
+    padding-top: 12px;*/
 }
 
 .team-soc-item{
@@ -340,9 +346,12 @@ img {
 .team-soc-link{
     width: 40px;
     height: 40px;
-    display: block;
+    cursor: pointer;
+    display: flex;
     border-radius: 50%;
     background-color: #4D5AE5;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -353,7 +362,10 @@ img {
 .team-soc-icon{
     width: 16px;
     height: 16px;
-    margin: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .customers-section {
@@ -434,9 +446,14 @@ img {
 .container-soc-link{
     width: 40px;
     height: 40px;
-    display: block;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container-soc-link:hover {
@@ -451,7 +468,9 @@ img {
 }
 
 .container-soc-icon {
-    margin: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 24px;
     height: 24px;
 }
